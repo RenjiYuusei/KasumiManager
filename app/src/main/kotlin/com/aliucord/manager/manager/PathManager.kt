@@ -12,15 +12,16 @@ class PathManager(
     private val context: Context,
 ) {
     /**
-     * The Shiggy folder where shared Shiggy files are stored.
-     * Standard path: `~/Shiggy`
+     * The Kasumi folder where shared Kasumi files are stored.
+     * Standard path: `~/Kasumi`
      */
-    val shiggyDir = Environment.getExternalStorageDirectory().resolve("Shiggy")
+    val kasumiDir = Environment.getExternalStorageDirectory().resolve("Kasumi")
+    val shiggyDir = kasumiDir
 
     /**
      * Global keystore used for signing APKs.
      */
-    val keystoreFile = shiggyDir.resolve("ks.keystore")
+    val keystoreFile = kasumiDir.resolve("ks.keystore")
 
     /**
      * The internal directory used for downloading components related to patching, and

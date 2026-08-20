@@ -45,8 +45,10 @@ class SaveMetadataStep(private val options: PatchOptions) : Step(), KoinComponen
         )
 
         container.log("Writing serialized install metadata to APK")
+        val metadataJson = json.encodeToString<InstallMetadata>(metadata)
         ZipWriter(apk, /* append = */ true).use {
-            it.writeEntry("shiggy.json", json.encodeToString<InstallMetadata>(metadata))
+            it.writeEntry("kasumi.json", metadataJson)
+            it.writeEntry("shiggy.json", metadataJson)
         }
     }
 }

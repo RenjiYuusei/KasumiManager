@@ -122,7 +122,7 @@ class HomeModel(
         val metadata = try {
             val applicationInfo = application.packageManager.getApplicationInfo(packageName, 0)
             val metadataFile = ZipReader(applicationInfo.publicSourceDir)
-                .use { it.openEntry("shiggy.json")?.read() }
+                .use { it.openEntry("kasumi.json")?.read() ?: it.openEntry("shiggy.json")?.read() }
 
             @OptIn(ExperimentalSerializationApi::class)
             metadataFile?.let { json.decodeFromStream<InstallMetadata>(it.inputStream()) }
@@ -274,22 +274,19 @@ class HomeModel(
         return application.packageManager
             .getInstalledPackages(PackageManager.GET_META_DATA)
             .filter {
-                // Shiggy doesn't have "legacy installer" whatsoever
-                return@filter it.applicationInfo?.metaData?.containsKey("isShiggy") == true
-
-                // // Packages installed via the legacy Installer do not have the metadata marker
-                // val isAliucordPkg = it.packageName == "com.aliucord"
-                // val hasAliucordMeta = it.applicationInfo?.metaData?.containsKey("isAliucord") == true
-                // isAliucordPkg || hasAliucordMeta
+                val meta = it.applicationInfo?.metaData
+                meta?.containsKey("isKasumi") == true ||
+                        meta?.containsKey("isShiggy") == true ||
+                        meta?.containsKey("isAliucord") == true
             }
     }
 
     /**
-     * Checks whether the current Shiggy installation is up-to-date.
+     * Checks whether the current Kasumi installation is up-to-date.
      *
      * Currently mirrors the behavior of Bunny Manager by directly comparing against
-     * the latest available Discord and ShiggyXposed release. This is a temporary approach and will remain
-     * in place until Shiggy adds support for version pinning.
+     * the latest available Discord and KasumiXposed release. This is a temporary approach and will remain
+     * in place until Kasumi adds support for version pinning.
      */
     private fun isInstallationUpToDate(pkg: PackageInfo): Boolean? {
         val trackerData = trackerIndexJson ?: return null
@@ -301,7 +298,7 @@ class HomeModel(
         // Try to parse install metadata. If none present, install was made via legacy installer.
         val apkPath = pkg.applicationInfo?.publicSourceDir ?: return false
         val installMetadata = try {
-            val metadataFile = ZipReader(apkPath).use { it.openEntry("shiggy.json")?.read() }
+            val metadataFile = ZipReader(apkPath).use { it.openEntry("kasumi.json")?.read() ?: it.openEntry("shiggy.json")?.read() }
                 ?: return false
 
             @OptIn(ExperimentalSerializationApi::class)

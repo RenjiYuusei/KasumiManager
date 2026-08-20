@@ -97,10 +97,10 @@ data class PatchOptions(
             val AliucordColor = Color(0xFF00C853)
 
             /**
-             * The default Shiggy background color. Updated to the requested hex #ffcb82 (ARGB
-             * 0xFFFFCB82).
+             * The default Kasumi background color. Hex #ffcb82 (ARGB 0xFFFFCB82).
              */
-            val ShiggyColor = Color(0xFFFFCB82)
+            val KasumiColor = Color(0xFFFFCB82)
+            val ShiggyColor = KasumiColor
 
             /** The new Discord blurple used in icons. */
             val BlurpleColor = Color(0xFF5865F2)
@@ -113,10 +113,10 @@ data class PatchOptions(
     companion object {
         val Default =
                 PatchOptions(
-                        appName = "ShiggyCord",
-                        packageName = "dev.shiggy.cord",
+                        appName = "KasumiCord",
+                        packageName = "dev.kasumi.cord",
                         debuggable = false,
-                        iconReplacement = IconReplacement.CustomColor(IconReplacement.ShiggyColor),
+                        iconReplacement = IconReplacement.CustomColor(IconReplacement.KasumiColor),
                         versionPreference = VersionPreference.Stable,
                         customVersionCode = "",
                 )

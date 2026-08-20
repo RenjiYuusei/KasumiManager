@@ -8,7 +8,8 @@
   <string name="support_server">Support Server</string>
   <string name="installer">Installer</string>
 
-  <string name="shiggy" translatable="false">Kasumi Manager</string>
+  <string name="shiggy" translatable="false">Kasumi</string>
+  <string name="kasumi" translatable="false">Kasumi</string>
   <string name="aliucord_description">A mod for the Discord Android App</string>
 
   <string name="action_cancel">Cancel</string>
@@ -164,8 +165,8 @@
   <string name="patch_step_dl_libapk">Downloading libs apk</string>
   <string name="patch_step_dl_langapk">Downloading lang apk</string>
   <string name="patch_step_dl_resapk">Downloading resources apk</string>
-  <string name="patch_step_inject_shiggy">Injecting ShiggyXposed with LSPatch</string>
-  <string name="patch_step_dl_wtxposed">Downloading ShiggyXposed</string>
+  <string name="patch_step_inject_shiggy">Injecting KasumiXposed with LSPatch</string>
+  <string name="patch_step_dl_wtxposed">Downloading KasumiXposed</string>
 
   <string name="status_queued">Queued</string>
   <string name="status_ongoing">Ongoing</string>

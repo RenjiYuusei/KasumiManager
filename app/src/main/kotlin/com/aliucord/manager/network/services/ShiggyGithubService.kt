@@ -28,7 +28,7 @@ class ShiggyGithubService(
     companion object {
         const val ORG = "RenjiYuusei"
         const val MANAGER_REPO = "KasumiManager"
-        const val XPOSED_ORG = "kmmiio99o"
-        const val XPOSED_REPO = "ShiggyXposed"
+        const val XPOSED_ORG = "RenjiYuusei"
+        const val XPOSED_REPO = "KasumiXposed"
     }
 }

@@ -120,13 +120,12 @@ private fun parseHexColor(hex: String): Color? {
     return try {
         val clean = hex.removePrefix("#").trim()
         when (clean.length) {
-            6 -> {
-                val colorInt = clean.toLong(16) or 0x00000000FF000000L
-                Color(colorInt.toInt())
+            3 -> {
+                val expanded = clean.map { "$it$it" }.joinToString("")
+                Color(android.graphics.Color.parseColor("#$expanded"))
             }
-            8 -> {
-                val colorInt = clean.toLong(16)
-                Color(colorInt.toInt())
+            6, 8 -> {
+                Color(android.graphics.Color.parseColor("#$clean"))
             }
             else -> null
         }

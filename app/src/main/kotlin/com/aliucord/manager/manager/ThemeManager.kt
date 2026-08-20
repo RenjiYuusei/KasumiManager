@@ -64,10 +64,10 @@ class ThemeManager(
             val body = when (response) {
                 is com.aliucord.manager.network.utils.ApiResponse.Success -> response.data
                 is com.aliucord.manager.network.utils.ApiResponse.Error -> {
-                    return@withContext Result.failure(Exception("HTTP Error: ${response.error.status}"))
+                    return@withContext Result.failure(response.error)
                 }
                 is com.aliucord.manager.network.utils.ApiResponse.Failure -> {
-                    return@withContext Result.failure(response.failure.throwable)
+                    return@withContext Result.failure(response.error)
                 }
             }
 

@@ -4,7 +4,7 @@ import androidx.compose.material3.*
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
-import cafe.adriel.voyager.navigator.LocalNavigator
+import com.aliucord.manager.ui.components.BackButton
 import dev.shiggy.manager.R
 
 @Composable
@@ -12,20 +12,11 @@ fun ThemesAppBar(
     onRefresh: () -> Unit,
     onAddTheme: () -> Unit,
 ) {
-    val navigator = LocalNavigator.current
-
     TopAppBar(
         title = {
             Text(stringResource(R.string.themes_title))
         },
-        navigationIcon = {
-            IconButton(onClick = { navigator?.pop() }) {
-                Icon(
-                    painter = painterResource(R.drawable.ic_back),
-                    contentDescription = stringResource(R.string.navigation_back),
-                )
-            }
-        },
+        navigationIcon = { BackButton() },
         actions = {
             IconButton(onClick = onRefresh) {
                 Icon(

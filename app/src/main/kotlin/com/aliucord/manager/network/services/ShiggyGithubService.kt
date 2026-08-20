@@ -17,10 +17,20 @@ class ShiggyGithubService(
         }
     }
 
-    /** Fetches the latest Xposed release with a 60s local cache. */
+    /** Fetches the latest Xposed release with a 60s local cache, with fallback to upstream ShiggyXposed if repo has no releases yet. */
     suspend fun getLatestXposedRelease(): ApiResponse<GithubRelease> {
-        return http.request {
+        val primary = http.request<GithubRelease> {
             url("https://api.github.com/repos/$XPOSED_ORG/$XPOSED_REPO/releases/latest")
+            header(HttpHeaders.CacheControl, "public, max-age=60, s-maxage=60")
+        }
+
+        if (primary is ApiResponse.Success) {
+            return primary
+        }
+
+        // Fallback to upstream Xposed release if fork has no releases yet
+        return http.request {
+            url("https://api.github.com/repos/$XPOSED_FALLBACK_ORG/$XPOSED_FALLBACK_REPO/releases/latest")
             header(HttpHeaders.CacheControl, "public, max-age=60, s-maxage=60")
         }
     }
@@ -30,5 +40,7 @@ class ShiggyGithubService(
         const val MANAGER_REPO = "KasumiManager"
         const val XPOSED_ORG = "RenjiYuusei"
         const val XPOSED_REPO = "KasumiXposed"
+        const val XPOSED_FALLBACK_ORG = "kmmiio99o"
+        const val XPOSED_FALLBACK_REPO = "ShiggyXposed"
     }
 }

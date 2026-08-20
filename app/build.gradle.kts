@@ -31,10 +31,10 @@ android {
             useSupportLibrary = true
         }
 
-        buildConfigField("String", "APPLICATION_NAME", "\"Shiggy Manager\"")
-        buildConfigField("String", "TAG", "\"ShiggyManager\"")
+        buildConfigField("String", "APPLICATION_NAME", "\"Kasumi Manager\"")
+        buildConfigField("String", "TAG", "\"KasumiManager\"")
 
-        buildConfigField("String", "GITHUB_ORG", "\"ShiggyCord\"")
+        buildConfigField("String", "GITHUB_ORG", "\"KasumiCord\"")
         buildConfigField("String", "SUPPORT_SERVER", "\"\"")
 
         buildConfigField("String", "BACKEND_URL", "\"https://aliucord.com/\"")

@@ -298,4 +298,23 @@
   <string name="fun_fact_11">This client does not support iOS!</string>
   <string name="fun_fact_12">Boom!</string>
 
+  <string name="navigation_themes">Themes</string>
+  <string name="themes_title">Theme Manager</string>
+  <string name="themes_none">No themes installed!</string>
+  <string name="themes_none_desc">You can download themes by URL (supports BetterDiscord &amp; JSON themes) directly into Shiggy.</string>
+  <string name="themes_action_add">Download Theme</string>
+  <string name="themes_dialog_add_title">Download Theme</string>
+  <string name="themes_dialog_add_desc">Enter a BetterDiscord link (e.g. betterdiscord.app/download?id=174) or direct JSON/CSS theme link:</string>
+  <string name="themes_dialog_url_hint">Theme URL or BetterDiscord link</string>
+  <string name="themes_dialog_paste">Paste</string>
+  <string name="themes_dialog_download">Download &amp; Install</string>
+  <string name="themes_status_downloading">Fetching and converting theme...</string>
+  <string name="themes_status_success">Successfully installed theme &quot;%s&quot;!</string>
+  <string name="themes_status_error">Failed to install theme: %s</string>
+  <string name="themes_delete_title">Delete Theme</string>
+  <string name="themes_delete_desc">Are you sure you want to delete theme &quot;%s&quot;?</string>
+  <string name="themes_delete_success">Deleted theme successfully</string>
+  <string name="setting_themes_manager">Manage Themes</string>
+  <string name="setting_themes_manager_desc">Download, convert and manage Shiggy themes</string>
+
 </resources>

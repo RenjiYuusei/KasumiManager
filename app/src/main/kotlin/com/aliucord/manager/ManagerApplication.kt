@@ -19,6 +19,7 @@ import com.aliucord.manager.ui.screens.patching.PatchingScreenModel
 import com.aliucord.manager.ui.screens.patchopts.PatchOptionsModel
 
 import com.aliucord.manager.ui.screens.settings.SettingsModel
+import com.aliucord.manager.ui.screens.themes.ThemeScreenModel
 import com.aliucord.manager.ui.widgets.updater.UpdaterViewModel
 import com.aliucord.manager.installers.root.RootInstaller
 import com.aliucord.manager.installers.shizuku.ShizukuInstaller
@@ -65,6 +66,7 @@ class ManagerApplication : Application() {
                 factoryOf(::IconOptionsModel)
                 factoryOf(::LogScreenModel)
                 factoryOf(::LogsListScreenModel)
+                factoryOf(::ThemeScreenModel)
                 viewModelOf(::UpdaterViewModel)
             })
 
@@ -72,6 +74,7 @@ class ManagerApplication : Application() {
             modules(module {
                 single { providePreferences() }
                 singleOf(::PathManager)
+                singleOf(::ThemeManager)
                 singleOf(::InstallerManager)
                 singleOf(::OverlayManager)
                 singleOf(::InstallLogManager)

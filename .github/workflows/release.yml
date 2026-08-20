@@ -3,6 +3,12 @@ name: Build & Publish Release App
 on:
   push:
     tags: [ "v*.*.*" ]
+  workflow_dispatch:
+    inputs:
+      tag:
+        description: 'Release Tag (leave empty to use app version, e.g. v1.1.2)'
+        required: false
+        default: ''
 
 concurrency:
   group: "release"
@@ -35,9 +41,11 @@ jobs:
           SIGNING_STORE_FILE: ${{ github.workspace }}/release.keystore
           RELEASE: true
         run: |
-          echo "${{ secrets.keystore }}" | base64 -d > release.keystore
+          if [ -n "${{ secrets.keystore }}" ]; then
+            echo "${{ secrets.keystore }}" | base64 -d > release.keystore
+          fi
           ./gradlew :app:packageRelease --stacktrace
-          rm release.keystore
+          rm -f release.keystore
 
       - name: Upload artifacts
         uses: actions/upload-artifact@v4
@@ -50,13 +58,14 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          tag="${{ github.ref_name }}"
-          apk_file="shiggy-manager-$tag.apk"
+          tag="${{ inputs.tag || github.ref_name }}"
+          if [ "$tag" = "main" ] || [ -z "$tag" ]; then
+            tag="v$(grep -m1 'versionName' app/build.gradle.kts | cut -d '"' -f 2)"
+          fi
+          apk_file="kasumi-manager-$tag.apk"
           mv -T ./app/build/outputs/apk/release/app-release.apk "./$apk_file"
 
           gh release create "$tag" \
             --title "$tag" \
             --generate-notes \
-            --verify-tag \
-            --fail-on-no-commits \
-            "./$apk_file"
+            "./$apk_file" || gh release upload "$tag" "./$apk_file" --clobber

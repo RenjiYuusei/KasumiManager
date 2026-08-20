@@ -298,4 +298,22 @@
   <string name="fun_fact_11">This client does not support iOS!</string>
   <string name="fun_fact_12">Boom!</string>
 
+  <string name="navigation_themes">Themes</string>
+  <string name="themes_title">Theme Manager</string>
+  <string name="theme_download_title">Download Theme</string>
+  <string name="theme_download_url_hint">Theme URL or BetterDiscord ID (e.g. 174)</string>
+  <string name="theme_download_button">Download Theme</string>
+  <string name="theme_download_paste">Paste</string>
+  <string name="theme_download_downloading">Downloading theme...</string>
+  <string name="theme_download_success">Downloaded &quot;%s&quot; successfully!</string>
+  <string name="theme_download_failed">Failed to download theme: %s</string>
+  <string name="themes_installed_header">Installed Themes</string>
+  <string name="themes_no_themes">No themes found in Shiggy/themes</string>
+  <string name="theme_delete_confirm_title">Delete Theme</string>
+  <string name="theme_delete_confirm_msg">Are you sure you want to delete &quot;%s&quot;?</string>
+  <string name="theme_deleted">Theme deleted</string>
+  <string name="theme_open_folder">Open Folder</string>
+  <string name="setting_manage_themes">Manage Themes</string>
+  <string name="setting_manage_themes_desc">Download and manage Discord themes</string>
+
 </resources>

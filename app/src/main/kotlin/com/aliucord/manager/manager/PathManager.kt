@@ -18,6 +18,12 @@ class PathManager(
     val shiggyDir = Environment.getExternalStorageDirectory().resolve("Shiggy")
 
     /**
+     * Directory for Discord themes.
+     * Standard path: `~/Shiggy/themes`
+     */
+    val themesDir = shiggyDir.resolve("themes").apply { mkdirs() }
+
+    /**
      * Global keystore used for signing APKs.
      */
     val keystoreFile = shiggyDir.resolve("ks.keystore")

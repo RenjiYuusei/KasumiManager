@@ -1,0 +1,276 @@
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
+  <string name="app_name">Kasumi Manager</string>
+  <string name="app_description">Một bản mod Discord được xây dựng với sự tối giản và mượt mà.</string>
+
+  <string name="aliucord" translatable="false">Aliucord</string>
+  <string name="discord" translatable="false">Discord</string>
+  <string name="github" translatable="false">GitHub</string>
+  <string name="support_server">Máy chủ hỗ trợ</string>
+  <string name="installer">Trình cài đặt</string>
+
+  <string name="shiggy" translatable="false">Kasumi</string>
+  <string name="kasumi" translatable="false">Kasumi</string>
+  <string name="aliucord_description">Bản mod cho ứng dụng Discord Android</string>
+
+  <string name="action_cancel">Hủy</string>
+  <string name="action_retry">Thử lại</string>
+  <string name="action_continue">Tiếp tục</string>
+  <string name="action_retry_install">Thử cài đặt lại</string>
+  <string name="action_open_error_log">Mở nhật ký lỗi</string>
+  <string name="action_apply">Áp dụng</string>
+  <string name="action_confirm">Xác nhận</string>
+  <string name="action_dismiss">Bỏ qua</string>
+  <string name="action_install">Cài đặt</string>
+  <string name="action_uninstall">Gỡ cài đặt</string>
+  <string name="action_add_install">Cài đặt mới</string>
+  <string name="action_update_install">Cập nhật bản cài</string>
+  <string name="action_update">Cập nhật</string>
+  <string name="action_clear">Xóa</string>
+  <string name="action_launch">Mở ứng dụng</string>
+  <string name="action_close">Đóng</string>
+  <string name="action_open_settings">Mở cài đặt</string>
+  <string name="action_search">Tìm kiếm</string>
+  <string name="action_copy">Sao chép</string>
+  <string name="action_collapse">Thu gọn</string>
+  <string name="action_expand">Mở rộng</string>
+  <string name="action_copied">Đã sao chép!</string>
+  <string name="action_cleared_cache">Đã xóa bộ nhớ đệm!</string>
+  <string name="action_exit_anyways">Vẫn thoát</string>
+  <string name="action_open_info">Mở thông tin</string>
+  <string name="action_reset_default">Đặt lại mặc định</string>
+  <string name="action_reinstall">Cài đặt lại</string>
+
+  <string name="permissions_grant_title">Cấp quyền</string>
+  <string name="storage_permissions_grant_body">Để Kasumi Manager hoạt động, cần có quyền truy cập tệp tin.</string>
+  <string name="install_permissions_grant_body">Để cài đặt Kasumi, cần cấp quyền cài đặt ứng dụng từ nguồn không xác định.</string>
+
+  <string name="installs_no_installs">Không tìm thấy bản cài đặt nào!</string>
+  <string name="launch_aliucord_fail">Không thể khởi chạy Kasumi</string>
+
+  <string name="settings_header_advanced">Nâng cao</string>
+  <string name="settings_header_appearance">Giao diện</string>
+  <string name="settings_header_info">Thông tin</string>
+  <string name="setting_theme">Giao diện chủ đề</string>
+  <string name="setting_theme_desc">Chủ đề giao diện áp dụng cho ứng dụng này</string>
+  <string name="setting_amoled">Chế độ Amoled</string>
+  <string name="setting_amoled_desc">Ép nền đen thuần (true-black) cho màn hình AMOLED</string>
+  <string name="setting_dynamic_color">Màu động (Material You)</string>
+  <string name="setting_dynamic_color_desc">Bật giao diện Material You trên Android 12+; màu động cũng sẽ áp dụng cho chủ đề Amoled</string>
+  <string name="setting_installer">Trình cài đặt</string>
+  <string name="setting_installer_desc">Phương thức sử dụng để cài đặt Kasumi</string>
+  <string name="setting_developer_options">Tùy chọn nhà phát triển</string>
+  <string name="setting_developer_options_desc">Không nên bật trừ khi bạn hiểu rõ mình đang làm gì!</string>
+  <string name="setting_keep_patched_apks">Giữ lại các file APK đã patch</string>
+  <string name="setting_keep_patched_apks_desc">Giữ lại tất cả các tệp và APK đã patch sau khi cài đặt để gỡ lỗi.</string>
+  <string name="settings_clear_cache">Xóa bộ nhớ đệm</string>
+  <string name="settings_export_apk">Xuất file APK</string>
+  <string name="settings_export_apk_not_implemented">Tính năng này chưa được triển khai</string>
+
+  <string name="about_manager_credit_disclaimer_notice">Trình quản lý này là bản fork từ dự án Aliucord Manager gốc, được duy trì và phát triển bởi đội ngũ Kasumi.</string>
+
+  <string name="theme_system">Hệ thống</string>
+  <string name="theme_dark">Tối</string>
+  <string name="theme_light">Sáng</string>
+  <string name="theme_amoled">Amoled</string>
+
+  <string name="navigation_back">Quay lại</string>
+  <string name="navigation_about">Giới thiệu</string>
+  <string name="navigation_about_manager">Về Trình quản lý</string>
+  <string name="navigation_logs">Mở nhật ký</string>
+  <string name="navigation_settings">Cài đặt</string>
+
+  <string name="contributors_contributions">%d đóng góp</string>
+  <string name="contributors">Người đóng góp</string>
+  <string name="lead_role_kettu">Kettu - Creator</string>
+  <string name="lead_role_shiggycord">KasumiCord - Creator</string>
+  <string name="lead_role_bunny">Bunny - Creator</string>
+  <string name="role_creator_vendetta">Vendetta - Creator</string>
+  <string name="role_original_manager_creator">Người tạo Manager ban đầu</string>
+
+  <string name="network_load_fail">Không thể tải dữ liệu</string>
+  <string name="network_warning_title">Mạng tính phí/Dữ liệu di động</string>
+  <string name="network_warning_body">Bạn đang kết nối dữ liệu di động. Việc cài đặt có thể tải về hàng trăm MB. Bạn có chắc chắn muốn tiếp tục?</string>
+  <string name="network_warning_disable">Không hiển thị lại thông báo này</string>
+
+  <string name="version_supported">Phiên bản hỗ trợ:</string>
+  <string name="version_none">Không có</string>
+  <string name="version_stable">Ổn định (Stable)</string>
+  <string name="version_beta">Thử nghiệm (Beta)</string>
+  <string name="version_alpha">Alpha</string>
+  <string name="version_unknown">Không xác định</string>
+  <string name="version_load_fail">Không thể lấy thông tin phiên bản</string>
+  <string name="version_invalid_code">Định dạng mã phiên bản không hợp lệ</string>
+
+  <string name="installer_file_save_success">Đã lưu vào %s</string>
+  <string name="installer_file_save_failed">Lỗi khi lưu %s</string>
+  <string name="installer_install_success">Cài đặt Kasumi thành công</string>
+  <string name="installer_install_aborted">Đã hủy cài đặt Kasumi</string>
+  <string name="installer_uninstall_new">Vui lòng gỡ cài đặt phiên bản Kasumi hiện tại để tiếp tục!</string>
+  <string name="installer_uninstall_success">Đã gỡ cài đặt Kasumi thành công</string>
+  <string name="installer_uninstall_aborted">Đã hủy gỡ cài đặt</string>
+  <string name="installer_dl_verify_fail">Xác thực file tải về thất bại</string>
+  <string name="installer_insufficient_storage">Không đủ dung lượng bộ nhớ!</string>
+  <string name="installer_banner_minimization">Vì tối ưu hóa pin chưa tắt, việc ẩn màn hình này có thể làm gián đoạn cài đặt!</string>
+  <string name="installer_banner_failure">Cài đặt thất bại! Bạn có thể thử lại hoặc nhấn vào đây để vào máy chủ hỗ trợ.</string>
+  <string name="installer_banner_success">Cài đặt Kasumi thành công! KHÔNG gỡ cài đặt ứng dụng Manager này vì cần nó để cập nhật.</string>
+
+  <string name="install_error_unknown">Cài đặt thất bại (Lỗi không xác định)</string>
+  <string name="install_error_blocked">Quá trình cài đặt bị chặn</string>
+  <string name="install_error_invalid">Một hoặc nhiều file APK không hợp lệ hoặc bị hỏng</string>
+  <string name="install_error_conflict">Xung đột với ứng dụng đã có, thường do chữ ký không khớp</string>
+  <string name="install_error_storage">Không đủ dung lượng bộ nhớ để cài đặt</string>
+  <string name="install_error_incompatible">Ứng dụng không tương thích với thiết bị này</string>
+  <string name="install_error_timeout">Quá thời gian chờ cài đặt</string>
+
+  <string name="install_group_prepare">Chuẩn bị</string>
+  <string name="install_group_download">Tải xuống các gói phụ thuộc</string>
+  <string name="install_group_patch">Patch file APK</string>
+  <string name="install_group_install">Cài đặt file APK</string>
+
+  <string name="patch_step_fetch_rna">Đang lấy thông tin Discord mới nhất</string>
+  <string name="patch_step_fetch_kt_version">Đang lấy phiên bản Discord mục tiêu</string>
+  <string name="patch_step_downgrade_check">Kiểm tra phiên bản cài đặt</string>
+  <string name="patch_step_restore_cache">Khôi phục từ bộ nhớ đệm</string>
+  <string name="patch_step_dl_kt_apk">Đang tải APK Discord</string>
+  <string name="patch_step_dl_kotlin">Đang tải thư viện Kotlin</string>
+  <string name="patch_step_dl_injector">Đang tải KasumiCord Injector</string>
+  <string name="patch_step_dl_aliuhook">Đang tải thư viện KasumiHook</string>
+  <string name="patch_step_dl_smali">Đang tải bản vá smali</string>
+  <string name="patch_step_copy_deps">Đang sao chép các thành phần phụ thuộc</string>
+  <string name="patch_step_patch_manifests">Đang vá AndroidManifest APK</string>
+  <string name="patch_step_patch_icon">Đang vá biểu tượng ứng dụng</string>
+  <string name="patch_step_add_injector">Đang thêm KasumiCord injector</string>
+  <string name="patch_step_add_aliuhook">Đang thêm thư viện KasumiHook</string>
+  <string name="patch_step_patch_smali">Đang áp dụng bản vá smali</string>
+  <string name="patch_step_reorganize_dex">Đang thêm file .dex vào APK</string>
+  <string name="patch_step_save_metadata">Lưu thông tin metadata</string>
+  <string name="patch_step_alignment">Căn chỉnh tối ưu APK</string>
+  <string name="patch_step_signing">Ký số APK</string>
+  <string name="patch_step_install">Đang cài đặt APK</string>
+  <string name="patch_step_cleanup">Đang dọn dẹp file tạm</string>
+
+  <string name="patch_step_dl_baseapk">Đang tải APK base</string>
+  <string name="patch_step_dl_libapk">Đang tải APK thư viện (lib)</string>
+  <string name="patch_step_dl_langapk">Đang tải APK ngôn ngữ (lang)</string>
+  <string name="patch_step_dl_resapk">Đang tải APK tài nguyên (res)</string>
+  <string name="patch_step_inject_shiggy">Đang nhúng KasumiXposed bằng LSPatch</string>
+  <string name="patch_step_dl_wtxposed">Đang tải KasumiXposed</string>
+
+  <string name="status_queued">Đang chờ</string>
+  <string name="status_ongoing">Đang xử lý</string>
+  <string name="status_skipped">Đã bỏ qua</string>
+  <string name="status_success">Thành công</string>
+  <string name="status_failed">Thất bại</string>
+
+  <string name="installer_abort_title">Bạn có muốn thoát?</string>
+  <string name="installer_abort_body">Bạn có chắc chắn muốn hủy tiến trình cài đặt đang diễn ra không?</string>
+
+  <string name="updater_body">Đã có bản cập nhật mới cho Kasumi Manager! Bạn có muốn cập nhật ngay không?</string>
+  <string name="updater_title">Cập nhật lên v%s</string>
+  <string name="updater_check_fail">Kiểm tra cập nhật thất bại!</string>
+  <string name="updater_update_fail">Cập nhật thất bại! Vui lòng tải và cài đặt bản cập nhật thủ công!</string>
+
+  <string name="downloader_err_unknown">Tải thất bại (Lỗi không xác định)</string>
+  <string name="downloader_err_timeout">Tải thất bại (Quá thời gian)</string>
+  <string name="downloader_err_response">Tải thất bại (Phản hồi không hợp lệ)</string>
+  <string name="downloader_err_file_exists">Tải thất bại (Tệp đã tồn tại)</string>
+  <string name="downloader_err_storage_space">Tải thất bại (Không đủ dung lượng trống)</string>
+
+  <string name="home_network_fail">Không thể lấy dữ liệu mạng!</string>
+
+  <string name="patchopts_title">Trình quản lý cung cấp nhiều tùy chỉnh khi cài đặt (không thể thay đổi sau khi đã cài).</string>
+  <string name="patchopts_pkgname_title">Tên Package (Package Name)</string>
+  <string name="patchopts_pkgname_desc">Tên định danh duy nhất cho ứng dụng. Đặt tên khác nhau cho phép cài song song nhiều bản Kasumi.</string>
+  <string name="patchopts_pkgname_invalid">Tên package không hợp lệ!</string>
+  <string name="patchopts_pkgname_taken">Ứng dụng đích sẽ bị ghi đè!</string>
+  <string name="patchopts_pkgname_ok">Tên package hợp lệ!</string>
+  <string name="patchopts_appname_title">Tên ứng dụng</string>
+  <string name="patchopts_appname_desc">Tên hiển thị trên màn hình chính của điện thoại.</string>
+  <string name="patchopts_debuggable_title">Bật Debug</string>
+  <string name="patchopts_debuggable_desc">Bật cờ debuggable trong manifest. Chỉ sử dụng nếu bạn biết rõ mục đích!</string>
+  <string name="patchopts_icon_title">Thay đổi biểu tượng</string>
+  <string name="patchopts_icon_desc">Đổi icon ứng dụng sang biểu tượng Kasumi (hoặc ảnh tùy chỉnh) thay vì Discord gốc.</string>
+  <string name="patchopts_divider_basic">Cơ bản</string>
+  <string name="patchopts_divider_advanced">Nâng cao</string>
+  <string name="patchopts_warning_invalid_iconopts">Tùy chọn icon không hợp lệ!</string>
+  <string name="patchopts_verchannel_title">Kênh phiên bản</string>
+  <string name="patchopts_verchannel_desc">Chọn kênh phát hành để cài đặt, hoặc chọn Tùy chỉnh để nhập mã phiên bản.</string>
+  <string name="patchopts_vercode_title">Mã phiên bản tùy chỉnh</string>
+  <string name="patchopts_vercode_desc">Nhập thủ công mã phiên bản Discord cần tải và cài đặt.</string>
+
+  <string name="iconopts_screen_title">Thay đổi biểu tượng</string>
+  <string name="iconopts_variant_title_old_discord">Discord Cũ</string>
+  <string name="iconopts_variant_desc_old_discord">Màu xanh blurple và logo Discord cổ điển từ 2021 trở về trước.</string>
+  <string name="iconopts_variant_title_color">Màu tùy chỉnh</string>
+  <string name="iconopts_variant_title_image">Ảnh tùy chỉnh</string>
+  <string name="iconopts_variant_desc_discord">Giữ nguyên biểu tượng gốc, chỉ bổ sung icon đơn sắc còn thiếu vào APK.</string>
+  <string name="iconopts_variant_desc_aliucord">Đổi màu biểu tượng sang màu thương hiệu Kasumi.</string>
+  <string name="iconopts_variant_desc_shiggy">Đổi màu biểu tượng sang màu thương hiệu Kasumi.</string>
+  <string name="iconopts_variant_desc_color">Chọn màu nền tùy chỉnh cho biểu tượng.</string>
+  <string name="iconopts_variant_desc_image">Chọn ảnh tùy chỉnh thay thế. Dung lượng tối đa là 256KiB.</string>
+  <string name="iconopts_colorpicker_title">Tông màu &amp; Độ bão hòa</string>
+  <string name="iconopts_colorpicker_desc">Các thành phần màu HSV chính.</string>
+  <string name="iconopts_lightness_title">Độ sáng</string>
+  <string name="iconopts_lightness_desc">Độ sáng của màu sắc.</string>
+  <string name="iconopts_hex_title">Mã màu Hex</string>
+  <string name="iconopts_hex_desc">Nhập thủ công mã màu Hex RGB (ví dụ #FFCB82).</string>
+  <string name="iconopts_failed_image">Không thể mở ảnh</string>
+  <string name="iconopts_failed_image_too_big">Kích thước ảnh vượt quá 256KiB</string>
+  <string name="iconopts_btn_open_selection">Chọn ảnh</string>
+  <string name="iconopts_btn_open_example_image">Ảnh mẫu</string>
+  <string name="iconopts_image_preview_none">Chưa chọn ảnh</string>
+  <string name="iconopts_image_preview_desc">Xem trước đầy đủ hình ảnh đã chọn.</string>
+  <string name="iconopts_image_preview_title">Xem trước</string>
+  <string name="iconopts_icon_preview_title">Xem trước biểu tượng</string>
+  <string name="iconopts_icon_preview_desc">Xem trước biểu tượng khi hiển thị trên màn hình chính của thiết bị</string>
+
+  <string name="log_title">Nhật ký</string>
+  <string name="log_section_install_info">Thông tin cài đặt</string>
+  <string name="log_section_env_info">Thông tin môi trường</string>
+  <string name="log_section_error">Chi tiết lỗi (Stacktrace)</string>
+  <string name="log_section_log">Nhật ký cài đặt</string>
+  <string name="log_action_export">Xuất nhật ký</string>
+  <string name="log_action_export_apk">Xuất APK đã Patch</string>
+  <string name="settings_share_custom_apk">Chia sẻ APK tùy chỉnh</string>
+  <string name="log_action_share">Chia sẻ nhật ký</string>
+
+  <string name="logs_title">Danh sách nhật ký</string>
+  <string name="logs_none">Không có nhật ký nào!</string>
+  <string name="logs_action_delete_all">Xóa tất cả nhật ký</string>
+  <string name="logs_status_delete_success">Đã xóa tất cả nhật ký thành công</string>
+  <string name="logs_wipe_title">Xóa nhật ký</string>
+  <string name="logs_wipe_desc">Bạn có chắc chắn muốn xóa vĩnh viễn tất cả các tệp nhật ký không?</string>
+
+  <string name="notif_group_install_title">Đang cài đặt</string>
+  <string name="notif_group_install_desc">Thông báo tiến trình khi ứng dụng đang chạy nền</string>
+  <string name="notif_install_ready_title">Bản cài Kasumi đã sẵn sàng!</string>
+  <string name="notif_install_ready_desc">Nhấn để cài đặt...</string>
+  <string name="notif_install_fail_title">Cài đặt Kasumi thất bại</string>
+  <string name="notif_install_fail_desc">Nhấn để xem thông tin chi tiết...</string>
+
+  <string name="play_protect_warning_title">Google Play Protect</string>
+  <string name="play_protect_warning_desc">Google Play Protect đang bật. Nó có thể cảnh báo do ứng dụng dùng chữ ký riêng. Nếu có hộp thoại xuất hiện, hãy nhấn "Chi tiết khác" -&gt; "Vẫn cài đặt".</string>
+  <string name="play_protect_warning_ok">Tiếp tục</string>
+  <string name="play_protect_warning_open_gpp">Mở Play Protect</string>
+  <string name="play_protect_warning_disable">Không hiển thị lại</string>
+
+  <string name="custom_component_picker_title">Thành phần tùy chỉnh</string>
+  <string name="custom_component_picker_desc">Đã tìm thấy phiên bản cục bộ cho thành phần (%s). Bạn có muốn sử dụng không?</string>
+
+  <string name="permissions_shizuku_denied">Không thể lấy quyền Shizuku</string>
+
+  <string name="fun_fact_prefix">Sự thật thú vị: %s</string>
+  <string name="fun_fact_1">KasumiCord ở phiên bản đầu tiên vốn là một bản build Kettu tùy chỉnh!</string>
+  <string name="fun_fact_2">Giao diện mới trong cài đặt được tạo ra khi tác giả cảm thấy buồn chán</string>
+  <string name="fun_fact_3">KasumiCord là client phong cách Vendetta đầu tiên hiển thị sẵn các plugin tích hợp!</string>
+  <string name="fun_fact_4">Bạn thích anime đúng không?</string>
+  <string name="fun_fact_5">Aliucord là client tuyệt vời với giao diện Discord cũ</string>
+  <string name="fun_fact_6">Cảm ơn cộng đồng mã nguồn mở đã đóng góp!</string>
+  <string name="fun_fact_7">KasumiCord mang đến trải nghiệm tuyệt vời và nhẹ nhàng</string>
+  <string name="fun_fact_8">Vencord và Equicord là hai dự án khác nhau.</string>
+  <string name="fun_fact_9">Client này thậm chí có thể chạy trên Android TV!</string>
+  <string name="fun_fact_10">Dự án được duy trì và phát triển bởi RenjiYuusei</string>
+  <string name="fun_fact_11">Bản mod này tối ưu hóa dành riêng cho Android!</string>
+  <string name="fun_fact_12">KasumiCord đỉnh nóc kịch trần!</string>
+
+</resources>

@@ -164,8 +164,8 @@
   <string name="patch_step_dl_libapk">Downloading libs apk</string>
   <string name="patch_step_dl_langapk">Downloading lang apk</string>
   <string name="patch_step_dl_resapk">Downloading resources apk</string>
-  <string name="patch_step_inject_shiggy">Injecting KasumiXposed with LSPatch</string>
-  <string name="patch_step_dl_wtxposed">Downloading KasumiXposed</string>
+  <string name="patch_step_inject_shiggy">Injecting ShiggyXposed with LSPatch</string>
+  <string name="patch_step_dl_wtxposed">Downloading ShiggyXposed</string>
 
   <string name="status_queued">Queued</string>
   <string name="status_ongoing">Ongoing</string>

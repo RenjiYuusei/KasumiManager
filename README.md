@@ -1,9 +1,9 @@
 <h1 align="center">Kasumi Manager</h1>
 
 <p align="center">
-  <a href="https://github.com/kmmiio99o/KasumiManager/releases"><img alt="Releases" src="https://img.shields.io/github/v/release/kmmiio99o/KasumiManager?style=flat-square"></a>
-  <a href="https://github.com/kmmiio99o/KasumiManager/blob/main/LICENSE"><img alt="License" src="https://img.shields.io/badge/license-MIT-blue?style=flat-square"></a>
-  <a href="https://github.com/kmmiio99o/KasumiManager/issues"><img alt="Issues" src="https://img.shields.io/github/issues/kmmiio99o/KasumiManager?style=flat-square"></a>
+  <a href="https://github.com/RenjiYuusei/KasumiManager/releases"><img alt="Releases" src="https://img.shields.io/github/v/release/RenjiYuusei/KasumiManager?style=flat-square"></a>
+  <a href="https://github.com/RenjiYuusei/KasumiManager/blob/main/LICENSE"><img alt="License" src="https://img.shields.io/badge/license-MIT-blue?style=flat-square"></a>
+  <a href="https://github.com/RenjiYuusei/KasumiManager/issues"><img alt="Issues" src="https://img.shields.io/github/issues/RenjiYuusei/KasumiManager?style=flat-square"></a>
 </p>
 
 <p align="center">
@@ -25,12 +25,12 @@ Kasumi Manager makes installing and managing KasumiCord simple:
 
 <p><strong>Download & run</strong> — get a released APK from Releases and install with:</p>
 
-Get newest apk from [release list](https://github.com/kmmiio99o/KasumiManager/releases/) and install it.
+Get newest apk from [release list](https://github.com/RenjiYuusei/KasumiManager/releases/) and install it.
 
 <p><strong>Build from source</strong> — clone and assemble:</p>
 
 ```bash
-git clone https://github.com/kmmiio99o/KasumiManager.git
+git clone https://github.com/RenjiYuusei/KasumiManager.git
 cd KasumiManager
 ./gradlew :app:assembleDebug
 ```

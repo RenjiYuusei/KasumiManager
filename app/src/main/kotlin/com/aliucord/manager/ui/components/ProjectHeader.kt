@@ -57,18 +57,7 @@ fun ProjectHeader(
         Row(
                 horizontalArrangement = Arrangement.Center,
         ) {
-            TextButton(
-                    onClick = { uriHandler.openUri("https://github.com/kmmiio99o/ShiggyCord") }
-            ) {
-                Icon(
-                        painter = painterResource(R.drawable.ic_account_github_white_24dp),
-                        contentDescription = null,
-                        modifier = Modifier.padding(end = ButtonDefaults.IconSpacing),
-                )
-                Text(text = stringResource(R.string.github))
-            }
-
-            TextButton(onClick = { uriHandler.openUri("https://discord.gg/nQykFF9Ud6") }) {
+            TextButton(onClick = { uriHandler.openUri("https://discord.gg/CuNhcJpWC7") }) {
                 Icon(
                         painter = painterResource(R.drawable.ic_discord),
                         contentDescription = stringResource(R.string.support_server),

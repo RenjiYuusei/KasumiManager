@@ -20,14 +20,15 @@ class ShiggyGithubService(
     /** Fetches the latest Xposed release with a 60s local cache. */
     suspend fun getLatestXposedRelease(): ApiResponse<GithubRelease> {
         return http.request {
-            url("https://api.github.com/repos/$ORG/$XPOSED_REPO/releases/latest")
+            url("https://api.github.com/repos/$XPOSED_ORG/$XPOSED_REPO/releases/latest")
             header(HttpHeaders.CacheControl, "public, max-age=60, s-maxage=60")
         }
     }
 
     companion object {
-        const val ORG = "kmmiio99o"
-        const val MANAGER_REPO = "ShiggyManager"
+        const val ORG = "RenjiYuusei"
+        const val MANAGER_REPO = "KasumiManager"
+        const val XPOSED_ORG = "kmmiio99o"
         const val XPOSED_REPO = "ShiggyXposed"
     }
 }

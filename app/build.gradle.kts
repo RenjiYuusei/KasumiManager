@@ -35,7 +35,7 @@ android {
         buildConfigField("String", "TAG", "\"KasumiManager\"")
 
         buildConfigField("String", "GITHUB_ORG", "\"KasumiCord\"")
-        buildConfigField("String", "SUPPORT_SERVER", "\"\"")
+        buildConfigField("String", "SUPPORT_SERVER", "\"https://discord.gg/CuNhcJpWC7\"")
 
         buildConfigField("String", "BACKEND_URL", "\"https://aliucord.com/\"")
 

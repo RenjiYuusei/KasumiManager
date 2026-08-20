@@ -117,20 +117,6 @@ class SettingsScreen : Screen, Parcelable {
                     )
                 }
 
-                val navigator = cafe.adriel.voyager.navigator.LocalNavigator.current
-                SettingsItem(
-                    modifier = Modifier.clickable { navigator?.push(com.aliucord.manager.ui.screens.themes.ThemeScreen()) },
-                    icon = { Icon(painterResource(R.drawable.ic_palette), null) },
-                    text = { Text(stringResource(R.string.setting_manage_themes)) },
-                    secondaryText = { Text(stringResource(R.string.setting_manage_themes_desc)) }
-                ) {
-                    Icon(
-                        painter = painterResource(R.drawable.ic_launch),
-                        contentDescription = null,
-                        modifier = Modifier.size(20.dp)
-                    )
-                }
-
                 SettingsHeader(stringResource(R.string.settings_header_advanced))
 
                 var showInstallerDialog by remember { mutableStateOf(false) }
